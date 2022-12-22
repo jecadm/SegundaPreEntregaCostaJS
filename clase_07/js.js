@@ -68,3 +68,43 @@ for (const elemento of productos) {
   console.log(elemnto.nombre);
 }
 
+
+const pendientes =  ["or","sd","SD","DS","RT","GGG",]
+
+//forEach
+pendientes.forEach((s, indice)=>{
+  console.log(`${indice}: ${s}`);
+});
+
+//metodo map
+
+pendientes.map((p,i)=>{ 
+  onsole.log(`${i}: ${p}`);
+});
+
+
+const carrito = [
+{nombre: "algo", precio: 56882},
+{nombre: "teclado", precio: 5652},
+{nombre: "tv", precio: 563.2},
+{nombre: "mouse", precio: 5622},
+{nombre: "pantall", precio: 5462},
+ {nombre: "pc", precio: 57762}, 
+];
+
+let total = carrito.reduce((accum, p )=>{
+
+  return accum +p.precio;
+
+}, 0/* esto es el inicio del estado del carrito */);
+
+let resultado = carrito.filter((p) => p.precio < 1000);
+
+let resulta2 = carrito.filter((p) => p.pnombre != "tv");
+
+let resulta3 = carrito.filter((p) => p.precio === 5462);
+
+
+
+//metodo math
+let dia =  new date();
